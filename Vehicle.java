@@ -3,9 +3,11 @@ package firstPro;
 public class Vehicle {
 	
 	private int id_num;
+	public String model;
 	
-	public Vehicle(int id){
+	public Vehicle(int id,String md){
 		id_num=id;
+		model=md;
 	}
 	
 	public void drive(){
@@ -14,6 +16,10 @@ public class Vehicle {
 	
 	public int getId(){
 		return id_num;
+	}
+	
+	public String getModel(){
+		return model;
 	}
 
 	
